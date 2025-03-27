@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Informe o seu nome:
+    <input type="text" id="input_nome"> 
+    <button onclick="teste()">OK</button>
+    <div id="text"></div>
+</body>
+</html>
+
+<script>
+    function teste() {
+        var nome = document.getElementById("input_nome").value; // Obtemos o valor do input
+        document.getElementById("text").innerText = `olá ${nome}`; // Exibe o nome na div
+    }
+</script>

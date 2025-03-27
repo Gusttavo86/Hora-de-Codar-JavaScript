@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    insira o seu nome <input type="text" id="input_nome">
+   <br> insira a sua idade <input type="text" id="input_idade">
+    <button onclick="teste()">OK</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function teste(){
+    var nome = document.getElementById("input_nome").value;
+    var idade = Number(document.getElementById("input_idade").value);
+
+    document.getElementById("mensagem").innerText = `olá ${nome}, sua idade é ${idade}`; 
+
+   
+}
+
+</script>
